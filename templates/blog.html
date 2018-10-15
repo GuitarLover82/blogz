@@ -4,5 +4,12 @@
 <div style='text-align: center'>
 <h1>Build a Blog</h1>
 </div>
-
+<form method="POST">
+    
+    {% for blog in blogs %}
+    <h2><a href="/blog?id={{blog.id}}">{{blog.title}}</a></h2>
+    <p>{{blog.body}}</p>
+     <hr />
+    {% endfor %}
+</form>
 {% endblock %}
