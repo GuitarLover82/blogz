@@ -8,9 +8,12 @@
     </head>
 <body>
     <nav>
-        <a style="margin-right: 0.5em;" href="/blog">Main Blog Page</a>
-        <a href="/newpost">Add a Blog Entry</a>
-    </nav>
+        <a style="margin-right: 0.5em;" href="/">Home</a>
+        <a style="margin-right: 0.5em;" href="/blog">All Posts</a>
+        <a style="margin-right; 0.5em;" href="/newpost">New Post</a>
+        <a style="float: right; margin-right: 0.5em;" href="/logout">logout</a>
+        <a style="float: right; margin-right: 0.5em;" href="/login">login</a>
+        </nav>
 
     {% with messages = get_flashed_messages(with_categories=True) %}
         <ul>
